@@ -13,4 +13,5 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.woff2', '**/*.woff', '**/*.ttf'],
+  base: process.env.NODE_ENV === 'production' ? '/d-dog-simulator/' : '/',
 })
