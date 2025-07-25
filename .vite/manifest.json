@@ -1,0 +1,23 @@
+{
+  "index.html": {
+    "file": "assets/main.9PbqZ231.js",
+    "name": "main",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/main.D3CCWXat.css"
+    ],
+    "assets": [
+      "assets/ZHAIZAIJIAFENTIAOTIAN-2.CYasIdUL.ttf",
+      "assets/mainpage.CqizlWq9.png"
+    ]
+  },
+  "src/assets/fonts/ZHAIZAIJIAFENTIAOTIAN-2.ttf": {
+    "file": "assets/ZHAIZAIJIAFENTIAOTIAN-2.CYasIdUL.ttf",
+    "src": "src/assets/fonts/ZHAIZAIJIAFENTIAOTIAN-2.ttf"
+  },
+  "src/assets/pic/mainpage.png": {
+    "file": "assets/mainpage.CqizlWq9.png",
+    "src": "src/assets/pic/mainpage.png"
+  }
+}
