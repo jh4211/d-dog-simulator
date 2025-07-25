@@ -11,14 +11,18 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.woff2', '**/*.woff', '**/*.ttf'],
-  base: process.env.NODE_ENV === 'production' ? '/d-dog-simulator/' : '/',
+  base: '/d-dog-simulator/', // 直接指定base路径，不再区分环境
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     emptyOutDir: true,
+    manifest: true, // 生成manifest文件
     rollupOptions: {
+      input: {
+        main: fileURLToPath(new URL('./index.html', import.meta.url)),
+      },
       output: {
-        assetFileNames: 'assets/[name].[hash].[ext]',
+        assetFileNames: 'assets/[name].[hash][extname]',
         chunkFileNames: 'assets/[name].[hash].js',
         entryFileNames: 'assets/[name].[hash].js',
       },

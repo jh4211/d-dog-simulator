@@ -22,7 +22,12 @@ jobs:
           node-version: 20
 
       - run: npm install
-      - run: npm run build
+      - run: rm -rf dist && npm run build
+
+      - name: Verify build output
+        run: |
+          ls -la dist/
+          cat dist/index.html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -30,3 +35,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
+          cname: jh4211.github.io/d-dog-simulator
