@@ -176,8 +176,8 @@ function changeSettings() {
   background-color: var(--theme-deep-green);
   color: white;
   height: 40px;
-  font-size: 20px;
-  letter-spacing: 4px;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 .dialog-button:disabled {
   background-color: var(--theme-deep-green-disabled);
