@@ -96,6 +96,7 @@ function changeSettings() {
   justify-items: center;
 }
 .game-home-title {
+  width: 90vw;
   position: fixed;
   top: 15%;
   /* 关键：水平居中核心属性 */
@@ -122,6 +123,8 @@ function changeSettings() {
   letter-spacing: 4px;
   -webkit-text-stroke: 0px;
   -webkit-text-fill-color: var(--theme-grey-grey);
+  /* 关键：清除文字阴影 */
+  text-shadow: none; /* 覆盖继承的阴影样式 */
 }
 .game-home-button-group {
   position: fixed;
