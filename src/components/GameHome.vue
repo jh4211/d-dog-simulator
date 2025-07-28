@@ -98,19 +98,23 @@ function changeSettings() {
 .game-home-title {
   position: fixed;
   top: 15%;
-  margin-left: 5%;
-  text-align: center;
+  /* 关键：水平居中核心属性 */
+  left: 50%; /* 相对于父容器左移50% */
+  transform: translateX(-50%); /* 向左偏移自身宽度的50%，实现真正居中 */
+  text-align: center; /* 文字内容在标题内部居中 */
+
+  /* 移除导致偏移的 margin-left */
+  margin-left: 0; /* 清除原有的 margin-left: 5% 或 3% */
+
   font-size: 64px;
   letter-spacing: 8px;
   color: var(--theme-flame);
-  /* 现代浏览器 */
   -webkit-text-stroke: 2px var(--theme-grey-grey);
   -webkit-text-fill-color: var(--theme-flame);
-  /* 旧版浏览器回退 */
   text-shadow:
     -2px -2px 0 var(--theme-grey-grey),
-    2px -2x 0 var(--theme-grey-grey),
-    -2px 2px 0 var(--theme-grey-grey),
+    2px -2px 0 var(--theme-grey-grey),
+    /* 修复原样式中的笔误：-2x → -2px */ -2px 2px 0 var(--theme-grey-grey),
     2px 2px 0 var(--theme-grey-grey);
 }
 .game-home-tag {
@@ -178,22 +182,14 @@ function changeSettings() {
 
 @media (min-width: 1024px) {
   .game-home-title {
-    position: fixed;
-    margin-left: 3%;
     top: 8%;
-    text-align: center;
+    /* 保持水平居中逻辑 */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0; /* 清除桌面端的 margin-left: 3% */
+
     font-size: 72px;
     letter-spacing: 36px;
-    color: var(--theme-flame);
-    /* 现代浏览器 */
-    -webkit-text-stroke: 2px var(--theme-grey-grey);
-    -webkit-text-fill-color: var(--theme-flame);
-    /* 旧版浏览器回退 */
-    text-shadow:
-      -2px -2px 0 var(--theme-grey-grey),
-      2px -2x 0 var(--theme-grey-grey),
-      -2px 2px 0 var(--theme-grey-grey),
-      2px 2px 0 var(--theme-grey-grey);
   }
   .game-home-button {
     font-size: 32px;
