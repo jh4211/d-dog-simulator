@@ -13,14 +13,14 @@ const dialogStyle = computed(() => {
   return window.innerWidth < 1024
     ? {
         width: '90vw',
-        height: '200px',
+        height: '180px',
         top: '25vh',
         backgroundColor: 'var(--theme-grey-grey)',
         '--dialog-border-color': 'var(--theme-deep-green)',
       }
     : {
         width: '480px',
-        height: '270px',
+        height: '200px',
         top: '25vh',
         backgroundColor: 'var(--theme-grey-grey)',
         '--dialog-border-color': 'var(--theme-deep-green)',
@@ -165,7 +165,7 @@ function changeSettings() {
 
 .dialog-msg {
   font-size: 20px;
-  padding: 1rem;
+  padding: 5px;
   letter-spacing: 2px;
 }
 .dialog-footer {
@@ -205,7 +205,7 @@ function changeSettings() {
   }
   .dialog-msg {
     font-size: 32px;
-    padding: 2rem;
+    padding: 5px;
   }
 }
 </style>
