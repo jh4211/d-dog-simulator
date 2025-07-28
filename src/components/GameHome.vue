@@ -98,7 +98,7 @@ function changeSettings() {
 .game-home-title {
   width: 90vw;
   position: fixed;
-  top: 15%;
+  top: 8%;
   /* 关键：水平居中核心属性 */
   left: 50%; /* 相对于父容器左移50% */
   transform: translateX(-50%); /* 向左偏移自身宽度的50%，实现真正居中 */
