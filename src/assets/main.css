@@ -13,6 +13,7 @@
   border-radius: 20px !important;
   border: 5px solid var(--dialog-border-color, #ccc);
 }
+
 /* .el-dialog {
   font-family: 'zhaizaijiafengtiaotian', 'Inter', sans-serif !important;
   width: 60% !important; 
