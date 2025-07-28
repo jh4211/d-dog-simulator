@@ -122,13 +122,18 @@ function changeSettings() {
 .game-home-button-group {
   position: fixed;
   top: 50%;
-  justify-items: center;
+  /* 关键：添加 Grid 布局 */
+  display: grid;
+  justify-items: center; /* 子元素水平居中 */
+  width: 100%; /* 确保容器占满屏幕宽度，否则无法居中 */
   padding: 2rem;
+  box-sizing: border-box; /* 避免 padding 导致容器溢出 */
 }
 .game-home-button {
   font-size: 24px;
   letter-spacing: 8px;
   height: 9vh;
+  margin: 0 auto;
   width: 50vw;
   background-color: var(--theme-deep-green);
   color: white;
