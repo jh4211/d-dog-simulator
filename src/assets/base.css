@@ -66,11 +66,17 @@
   font-weight: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'zhaizaijiafengtiaotian';
   font-style: normal;
   font-weight: 400;
   src: url('@/assets/fonts/ZHAIZAIJIAFENTIAOTIAN-2.ttf') format('truetype');
+} */
+@font-face {
+  font-family: 'zhaizaijiafengtiaotian';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/fonts/ZHAIZAIJIAFENTIAOTIAN-2.woff2') format('woff2');
 }
 
 body {
