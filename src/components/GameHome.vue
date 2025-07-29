@@ -107,7 +107,7 @@ function changeSettings() {
   /* 移除导致偏移的 margin-left */
   margin-left: 0; /* 清除原有的 margin-left: 5% 或 3% */
 
-  font-size: 64px;
+  font-size: 60px;
   letter-spacing: 8px;
   color: var(--theme-flame);
   -webkit-text-stroke: 2px var(--theme-grey-grey);

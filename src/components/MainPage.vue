@@ -53,7 +53,7 @@ onMounted(() => {
 
 const dialogStyle = computed(() => ({
   width: window.innerWidth < 1024 ? '75vw' : '270px',
-  height: window.innerWidth < 1024 ? '75vh' : '580px',
+  height: window.innerWidth < 1024 ? '75vh' : '480px',
   backgroundColor: 'var(--theme-grey-grey)',
   '--dialog-border-color': 'var(--theme-flame)',
 }))
@@ -95,7 +95,7 @@ function createPlayer() {
               <div class="avatar-preview">
                 <img :src="form.avatar" alt="玩家头像" class="avatar-img" />
               </div>
-              <el-button type="text" class="change-avatar-btn" @click="changeAvatar">
+              <el-button size="small" type="text" class="change-avatar-btn" @click="changeAvatar">
                 换一个
               </el-button>
             </div>
@@ -158,6 +158,7 @@ function createPlayer() {
 
 .dialog-footer {
   text-align: center;
+  align-items: center;
 }
 
 .dialog-button {
@@ -184,17 +185,21 @@ function createPlayer() {
 }
 
 .avatar-preview {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
+  background-color: var(--theme-dark);
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 10px;
   border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar-img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -202,5 +207,18 @@ function createPlayer() {
   color: var(--theme-flame);
   padding: 5px 0;
   font-size: 14px;
+}
+
+:deep(.el-form-item) {
+  display: flex;
+  align-items: center; /* 垂直居中核心 */
+  margin-bottom: 15px; /* 调整表单项间距，避免拥挤 */
+}
+
+:deep(.el-form-item__label) {
+  font-size: 16px;
+  white-space: nowrap; /* 防止标签文字换行 */
+  margin-right: 10px; /* 标签与内容的间距 */
+  padding: 0; /* 清除默认内边距 */
 }
 </style>
