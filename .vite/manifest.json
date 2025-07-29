@@ -1,0 +1,53 @@
+{
+  "index.html": {
+    "file": "assets/main.uH_nKjp9.js",
+    "name": "main",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/main.htam2fex.css"
+    ],
+    "assets": [
+      "assets/avatar1.Bt-5neVD.png",
+      "assets/avatar2.BVG75Eu2.png",
+      "assets/avatar3.BK6EVy7c.png",
+      "assets/avatar4.BivzXcpn.png",
+      "assets/avatar5.Bs_u_x1e.png",
+      "assets/avatar6.FyQUqeWF.png",
+      "assets/ZHAIZAIJIAFENTIAOTIAN-2.B5zKCWOP.woff2",
+      "assets/mainpage.CqizlWq9.png"
+    ]
+  },
+  "src/assets/avatar/avatar1.png": {
+    "file": "assets/avatar1.Bt-5neVD.png",
+    "src": "src/assets/avatar/avatar1.png"
+  },
+  "src/assets/avatar/avatar2.png": {
+    "file": "assets/avatar2.BVG75Eu2.png",
+    "src": "src/assets/avatar/avatar2.png"
+  },
+  "src/assets/avatar/avatar3.png": {
+    "file": "assets/avatar3.BK6EVy7c.png",
+    "src": "src/assets/avatar/avatar3.png"
+  },
+  "src/assets/avatar/avatar4.png": {
+    "file": "assets/avatar4.BivzXcpn.png",
+    "src": "src/assets/avatar/avatar4.png"
+  },
+  "src/assets/avatar/avatar5.png": {
+    "file": "assets/avatar5.Bs_u_x1e.png",
+    "src": "src/assets/avatar/avatar5.png"
+  },
+  "src/assets/avatar/avatar6.png": {
+    "file": "assets/avatar6.FyQUqeWF.png",
+    "src": "src/assets/avatar/avatar6.png"
+  },
+  "src/assets/fonts/ZHAIZAIJIAFENTIAOTIAN-2.woff2": {
+    "file": "assets/ZHAIZAIJIAFENTIAOTIAN-2.B5zKCWOP.woff2",
+    "src": "src/assets/fonts/ZHAIZAIJIAFENTIAOTIAN-2.woff2"
+  },
+  "src/assets/pic/mainpage.png": {
+    "file": "assets/mainpage.CqizlWq9.png",
+    "src": "src/assets/pic/mainpage.png"
+  }
+}
